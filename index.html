@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/088040ac7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Patient Dashboard</title>
+</head>
+<body>
+ <div class="wrapper">
+    <aside id="sidebar">
+     <div class="h-100">
+        <div class="sidebar-logo">
+            <a href="#">Dashboard</a>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-header">
+                Admin Element
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                   
+                </a>
+            </li>
+            
+        </ul>
+     </div>
+    </aside>
+    <div class="main">
+       <nav class="navbar navbar-expand px-3 border-bottom">
+        <button class="btn" id="sidebar-toggle" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                    <img src="data:image/jpeg;base64,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" class="avatar img-fluid rounded">
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#" class="dropdown-item">profile</a>
+                    <a href="#" class="dropdown-item">Setting</a>
+                    <a href="#" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </div>
+       </nav>
+       
+       <main class="main-container">
+        <div class="main-div-1">
+        <div class="mb-3 main-head">
+            <h3> Current Appointment</h3>
+        </div>
+        <div class="col-md-3 hero">
+            <div class="name">
+                <div class="pat-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPI5uDCSAIBkb982u_5Nbue0ukJfQwaKAOg&usqp=CAU" alt="Patient Photo" class="img-fluid image-pat ">
+            </div>
+                <h4>John Doe</h4>
+                <p class="age">Age: 35</p>
+                <button class="btn btn-primary new-btn">Update</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="info">
+                <h4>Information</h4>
+                <ul>
+                    <li><span class="label">Gender:</span> <span class="value">Male</span></li>
+                    <li><span class="label">Blood Type:</span> <span class="value">O+</span></li>
+                    <li><span class="label">Allergies:</span> <span class="value">None</span></li>
+                    <li><span class="label">Disease:</span> <span class="value">Diabetes</span></li>
+                    <li><span class="label">Height:</span> <span class="value">180 cm</span></li>
+                    <li><span class="label">Weight:</span> <span class="value">75 kg</span></li>
+                    <li><span class="label">Patient ID:</span> <span class="value">123456</span></li>
+                    <li><span class="label">Last Visit:</span> <span class="value">2023-10-05</span></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="main-div-2">
+            <div class="status">
+                <div class="status1"><i class="fa-solid fa-heart-pulse fa-xl"></i>
+                    <p>heart rate</p>
+                    <h3>80bpm</h3>
+                </div>
+                <div class="status2"><i class="fa-solid fa-temperature-quarter fa-xl"></i>
+                    <p>Body Temperature</p>
+                    <h3>35.5c</h3>
+                </div>
+                <div class="status3"><i class="fa-solid fa-vial fa-xl"></i>
+                    <p>Glucose</p>
+                    <h3>100mg/dl</h3>
+                </div>
+            </div>
+            <div class="report-main">
+                <h4>Test Reports</h4>
+            <div class="report">
+                <div class="report1">
+                    <div class="rep-icon1"> <i class="fa-solid fa-clipboard fa-xl"></i></div>
+            
+                    <div><h5>CT Scan-Full Body</h5>
+                        <p>12th February 2020</p>
+                    </div>
+                   
+
+                </div>
+                <div class="report2">
+                    <div class="rep-icon2"> <i class="fa-solid fa-clipboard fa-xl"></i></div>
+                   
+                    <div> <h5>Creation Kinase T</h5>
+                        <p>12th February 2020</p>
+                    </div>
+                </div>
+                <div class="report3">
+                    <div class="rep-icon3"> <i class="fa-solid fa-clipboard fa-xl"></i></div>
+            
+                    <div> <h5>Eye Fluorescein Test</h5>
+                        <p>12th February 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="precpt">
+              <h4>Prescription</h4>
+              <table>
+                <thead >
+                    <tr class="table-tr">
+                        <th>Prescription</th>
+                        <th>Date</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+               
+            </table>
+            </div>
+        </div>
+       </main>
+    </div>
+ </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
